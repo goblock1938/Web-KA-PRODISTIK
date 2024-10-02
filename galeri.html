@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile MANSAPAS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-grid.css" />
+</head>
+
+<body>
+    <nav class="blur-fx top-nav">
+        <img class="logo-navi" src="Image\Logo MAN.png" />
+        <h2 class="header white-text">MANSAPAS</h2>
+        <ul class="ul-navi">
+            <li class="hide"><a class="a-navi white-text" href="index.html">Home</a></li>
+            <li class="hide"><a class="a-navi white-text" href="#">Prestasi</a></li>
+            <li class="hide"><a class="a-navi white-text" href="galeri.html">Galeri</a></li>
+            <li class="hide"><a class="a-navi white-text" href="extra.html">Tentang Ekstra</a></li>
+            <li onclick=showside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <nav class="blur-fx sidebar">
+        <ul class="ul-navi-side">
+            <li onclick="hideside()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a class="a-navi-side white-text" href="#">Home</a></li>
+            <li><a class="a-navi-side white-text" href="Prestasi.html">Prestasi</a></li>
+            <li><a class="a-navi-side white-text" href="galeri.html">Galeri</a></li>
+            <li><a class="a-navi-side white-text" href="extra.html">Tentang Ekstra</a></li>
+        </ul>
+    </nav>
+    <script>
+        function showside() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.right = '0'
+        }
+        function hideside() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.right = '-250px'
+        }
+    </script>
+</body>

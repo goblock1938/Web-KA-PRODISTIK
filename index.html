@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile MANSAPAS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-grid.css" />
+</head>
+
+<body>
+    <nav class="blur-fx top-nav">
+        <img class="logo-navi" src="Image\Logo MAN.png" />
+        <h2 class="header white-text">MANSAPAS</h2>
+        <ul class="ul-navi">
+            <li><a class="hide a-navi hide white-text" href="#">Home</a></li>
+            <li><a class="hide a-navi hide white-text" href="Prestasi.html">Prestasi</a></li>
+            <li><a class="hide a-navi hide white-text" href="galeri.html">Galeri</a></li>
+            <li><a class="hide a-navi hide white-text" href="extra.html">Tentang Ekstra</a></li>
+            <li class="show button" onclick="showside()"/><a><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></a></li>
+        </ul>
+    </nav>
+    <nav class="blur-fx sidebar">
+        <ul class="ul-navi-side">
+            <li><a onclick="hideside()"><svg xmlns="http://www.w3.org/2000/svg" 
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path 
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 
+                224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a class="a-navi-side white-text" href="#">Home</a></li>
+            <li><a class="a-navi-side white-text" href="Prestasi.html">Prestasi</a></li>
+            <li><a class="a-navi-side white-text" href="galeri.html">Galeri</a></li>
+            <li><a class="a-navi-side white-text" href="extra.html">Tentang Ekstra</a></li>
+        </ul>
+    </nav>
+    <!-- section-desc -->
+    <section>
+        <div class="section-desc white-text">
+            <h1 class="s-text header-desc blur-fx">PROFILE MANSAPAS</h1>
+            <p class="s-text para-desc blur-fx">
+                Madrasah Aliyah Negeri 1 Pasuruan merupakan lembaga pendidikan umum tingkat menengah berbasis Islam
+                dilingkungan Departemen Agama dengan keunggulan dibidang akademik dan pemahaman nilai-nilai ajaran agama
+                Islam. Secara fisik citra yang ditampilkan oleh MAN 1 Pasuruan adalah lembaga yang berbasis Islam , yang
+                memiliki visi sebagai sebuah lembaga pendidikan Islam yang optimis mampu bersaing dengan sekolah umum
+                secara kompetitif. MAN 1 Pasuruan merupakan salah satu Lembaga Pendidikan Madrasah Aliyah Negeri di
+                Kabupaten Pasuruan Propinsi Jawa timur yang didirikan dari suatu keinginan yang luhur demi kemajuan
+                bangsa dan agama, serta membangun generasi Islam yang tangguh, menghayati dan mengamalkan ilmu agama,
+                tahu kewajiban terhadap perkembangan generasi.
+            </p>
+        </div>
+    </section>
+    <!-- figure-card -->
+    <div class="figure-horizontal">
+        <div class="contain-guru">
+            <figure class="figure-items">
+                <a onclick=bio_1()>
+                    <img class="figure-image" src="Image\pak nas.png" />
+                    <figcaption class="cap-card white-text blur-fx">H.Nasrudin, S.Pd., M.Si</figcaption>
+                    <div class="bio-1 white-text">
+                        <a onclick=close_bio_1()>
+                            <h4>
+                                Nama : Nasrudin S.Pd M.Si<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : Kepala sekolah<br>
+                                Mapel Keahlian : Fisika<br>
+                                Hobi : bersepeda <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_2()>
+                    <img class="figure-image" src="Image\pak ali waka.png" />
+                    <figcaption class="cap-card white-text blur-fx">Mohammad Ali S.Pd.I. M.Pd.I</figcaption>
+                    <div class="bio-2 white-text">
+                        <a onclick=close_bio_2()>
+                            <h4>
+                                Nama : Mohammad Ali S.Pd.I. M.Pd.I<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : Wakil kepala Bagian Prasarana<br>
+                                Mapel Keahlian : Al-qur'an Hadits<br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_3()>
+                    <img class="figure-image" src="Image\pak heri.png" />
+                    <figcaption class="cap-card white-text blur-fx">Heri Santoso S.Pd. M.Pd.I.</figcaption>
+                    <div class="bio-3 white-text">
+                        <a onclick=close_bio_3()>
+                            <h4>
+                                Nama : Heri Santoso S.Pd. M.Pd.I.<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : Wakil Kepala bagian kesiswaan<br>
+                                Mapel Keahlian : PKN<br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_4()>
+                    <img class="figure-image" src="Image\pak huda.png" />
+                    <figcaption class="cap-card white-text blur-fx">Akhmad Huda S.Pd M.Pd</figcaption>
+                    <div class="bio-4 white-text">
+                        <a onclick=close_bio_4()>
+                            <h4>
+                                Nama : Akhmad Huda S.Pd M.Pd<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : Wakil Kepala bagian HUMAS<br>
+                                Mapel Keahlian : bahasa Indonesia<br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_5()>
+                    <img class="figure-image" src="Image\bu yuni.png" />
+                    <figcaption class="cap-card white-text blur-fx">Dwi Yuniati S.Pd</figcaption>
+                    <div class="bio-5 white-text">
+                        <a onclick=close_bio_5()>
+                            <h4>
+                                Nama : Dwi Yuniati S.Pd<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : Wakil Kepala bagian Kurikulum<br>
+                                Mapel Keahlian : Geografi <br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_6()>
+                    <img class="figure-image" src="Image\pak alif.png" />
+                    <figcaption class="cap-card white-text blur-fx">Alifudin Khumaidi S.Pd. M.Pd.</figcaption>
+                    <div class="bio-6 white-text">
+                        <a onclick=close_bio_6()>
+                            <h4>
+                                Nama : Alifudin Khumaidi S.Pd. M.Pd.<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : ?<br>
+                                Mapel Keahlian : Fisika<br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_7()>
+                    <img class="figure-image" src="Image\pak shobah.png" />
+                    <figcaption class="cap-card white-text blur-fx">Muhammad Shobahul Falakh S.Pd</figcaption>
+                    <div class="bio-7 white-text">
+                        <a onclick=close_bio_7()>
+                            <h4>
+                                Nama : Muhammad Shobahul Falakh S.Pd<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : - <br>
+                                Mapel Keahlian : ? <br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_8()>
+                    <img class="figure-image" src="Image\pak sutris.png" />
+                    <figcaption class="cap-card white-text blur-fx">Achmad Sutrisno M.Kom</figcaption>
+                    <div class="bio-8 white-text">
+                        <a onclick=close_bio_8()>
+                            <h4>
+                                Nama : >Achmad Sutrisno M.Kom<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : ? <br>
+                                Mapel Keahlian : Informatika <br>
+                                Hobi : bersepeda <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_9()>
+                    <img class="figure-image" src="Image\pak yusa.png" />
+                    <figcaption class="cap-card white-text blur-fx">Yusa' Abdillah S.Pd</figcaption>
+                    <div class="bio-9 white-text">
+                        <a onclick=close_bio_9()>
+                            <h4>
+                                Nama : Yusa' Abdillah S.Pd<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : - <br>
+                                Mapel Keahlian : Bahasa Arab & SKI<br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_10()>
+                    <img class="figure-image" src="Image\bu nina.png" />
+                    <figcaption class="cap-card white-text blur-fx">Nina Khoidaroh S.Kom</figcaption>
+                    <div class="bio-10 white-text">
+                        <a onclick=close_bio_10()>
+                            <h4>
+                                Nama : Nina Khoidaroh S.Kom<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : - <br>
+                                Mapel Keahlian : Informatika<br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_11()>
+                    <img class="figure-image" src="Image\bu siska.png" />
+                    <figcaption class="cap-card white-text blur-fx">Siska Amalia S.Si</figcaption>
+                    <div class="bio-11 white-text">
+                        <a onclick=close_bio_11()>
+                            <h4>
+                                Nama : Siska Amalia S.Si<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : - <br>
+                                Mapel Keahlian : Fisika<br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_12()>
+                    <img class="figure-image" src="Image\bu siti.png" />
+                    <figcaption class="cap-card white-text blur-fx">Siti Nursila S.Pd</figcaption>
+                    <div class="bio-12 white-text">
+                        <a onclick=close_bio_12()>
+                            <h4>
+                                Nama : Siti Nursila S.Pd<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : - <br>
+                                Mapel Keahlian : Kimia <br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+            <figure class="figure-items">
+                <a onclick=bio_13()>
+                    <img class="figure-image" src="Image\bu yosi.png" />
+                    <figcaption class="cap-card white-text blur-fx">Yosi Oktaviani S.Si</figcaption>
+                    <div class="bio-13 white-text">
+                        <a onclick=close_bio_13()>
+                            <h4>
+                                Nama : Yosi Oktaviani S.Si<br>
+                                Tanggal lahir : - <br>
+                                Jabatan : - <br>
+                                Mapel Keahlian : Matematika <br>
+                                Hobi : - <br>
+                                Moto hidup : - <br>
+                                <ul>
+                                    riwayat pendidikan :
+                                    <li>SD : - </li>
+                                    <li>SMP : - </li>
+                                    <li>SMA : - </li>
+                                    <li>S1 : - </li>
+                                    <li>S2 : - </li>
+                                </ul>
+                                </h3>
+                        </a>
+                    </div>
+                </a>
+            </figure>
+        </div>
+    </div>
+    <!-- program madrasah -->
+    <div class="title-center">
+        <h1 class="title-header noto-serif-regular">Program Madrasah</h1>
+    </div>
+    <!-- prodistik -->
+    <div class="container-program">
+        <div class="title-image">
+            <div class="title-prog-1">
+                <h1>Prodistik ITS</h1>
+            </div>
+            <div class="image-prog-1">
+                <img src="prestasi/procommit v13.jpeg" />
+            </div>
+        </div>
+        <div class="para-prog-1">
+            <p class="white-text"><strong>PRODISTIK ITS</strong><br>merupakan program terapan di bidang Teknologi
+                Informasi dan Komunikasi
+                yang dirancang untuk
+                memperkaya keterampilan lulusan MA/SMA melalui kurikulum unggulan dan bimbingan ahli di Institut
+                Teknologi Sepuluh Nopember (ITS). Tujuan utamanya adalah memberdayakan para lulusan agar dapat memasuki
+                industri IT dengan keahlian dan kompetensi yang tinggi.<br>
+                disamping kita bisa melihat anak-anak berprestasi yang meraih 7 juara di lomba PROCOMMIT V13
+            </p>
+            <a class="read-more" href="prodistik.html">More Details
+            </a>
+        </div>
+    </div>
+    <!-- sks madrasah -->
+    <div class="container-program">
+        <div class="title-image">
+            <div class="title-prog-2">
+                <h1>Madrasah SKS</h1>
+            </div>
+            <div class="image-prog-2">
+                <img src="image/SKS-img.jpeg" />
+            </div>
+        </div>
+        <div class="para-prog-2">
+            <p class="white-text">
+                <strong>SKS</strong><br>merupakan singkatan dari satuan kredit semester merupakan salah satu
+                program unggulan yang dimiliki oleh MAN 1 Pasuruan, berdiri sejak 2017. di program SKS ini juga
+                ada Program SKS 2 tahun yang memungkinkan siswa bisa lulus dengan cepat. Pada awal mulanya,
+                Program SKS 2 Tahun diberi nama PDCI (Peserta Didik Cerdas Istimewa), seiring bergantinya
+                kurikulum hingga saat ini bernama Program SKS 2 Tahun. Selain menawarkan waktu lulus yang
+                lebih cepat, program ini juga memiliki kegiatan tambahan untuk membekali siswa yaitu kelas tambahan
+                dan juga outbond. Selain itu, program SKS 2 tahun juga didukung oleh fasilitas pembelajaran yang
+                membuat suasana belajar menjadi sangat nyaman.
+            </p>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contain-footer">
+            <div class="img-alm">
+                <img src="image/Logo MAN.png" />
+                <p>Jl. Balai Desa Gelanggang No.3A, Glanggang, Kec. Beji, Pasuruan, Jawa Timur 67154</p>
+            </div>
+            <div class="contain-map">
+                <h1 class="white-text">MAN 1 Pasuruan</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7400.138344038372!2d112.7812138977147!3d-7.589558824141621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7db6216a50cab%3A0x3f248722b1ee5c26!2sMAN%201%20Pasuruan!5e0!3m2!1sid!2sid!4v1724950619113!5m2!1sid!2sid"
+                    width="500" style="border:19px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="logic.js">
+    </script>
+</body>
+
+</html>
