@@ -4,8 +4,9 @@
 <head>
     <title>Profile MANSAPAS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style-grid.css" />
+    <link rel="stylesheet" href="CSS file/style.css" />
+    <link rel="stylesheet" href="CSS file/style-grid.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
 
 <body>
@@ -14,8 +15,7 @@
         <h2 class="header white-text">MANSAPAS</h2>
         <ul class="ul-navi">
             <li><a class="hide a-navi hide white-text" href="#">Home</a></li>
-            <li><a class="hide a-navi hide white-text" href="Prestasi.html">Prestasi</a></li>
-            <li><a class="hide a-navi hide white-text" href="galeri.html">Galeri</a></li>
+            <li><a class="hide a-navi hide white-text" href="Galeri.html">galeri</a></li>
             <li><a class="hide a-navi hide white-text" href="extra.html">Tentang Ekstra</a></li>
             <li class="show button" onclick="showside()"/><a><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                     viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
@@ -23,23 +23,12 @@
                 </svg></a></li>
         </ul>
     </nav>
-    <nav class="blur-fx sidebar">
-        <ul class="ul-navi-side">
-            <li><a onclick="hideside()"><svg xmlns="http://www.w3.org/2000/svg" 
-                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path 
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 
-                224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a class="a-navi-side white-text" href="#">Home</a></li>
-            <li><a class="a-navi-side white-text" href="Prestasi.html">Prestasi</a></li>
-            <li><a class="a-navi-side white-text" href="galeri.html">Galeri</a></li>
-            <li><a class="a-navi-side white-text" href="extra.html">Tentang Ekstra</a></li>
-        </ul>
-    </nav>
     <!-- section-desc -->
     <section>
         <div class="section-desc white-text">
-            <h1 class="s-text header-desc blur-fx">PROFILE MANSAPAS</h1>
-            <p class="s-text para-desc blur-fx">
+            <h1 class="header-desc blur-fx">PROFILE MANSAPAS
+            </h1>
+            <p class="para-desc blur-fx">
                 Madrasah Aliyah Negeri 1 Pasuruan merupakan lembaga pendidikan umum tingkat menengah berbasis Islam
                 dilingkungan Departemen Agama dengan keunggulan dibidang akademik dan pemahaman nilai-nilai ajaran agama
                 Islam. Secara fisik citra yang ditampilkan oleh MAN 1 Pasuruan adalah lembaga yang berbasis Islam , yang
@@ -400,13 +389,11 @@
     </div>
     <!-- prodistik -->
     <div class="container-program">
-        <div class="title-image">
-            <div class="title-prog-1">
-                <h1>Prodistik ITS</h1>
-            </div>
-            <div class="image-prog-1">
-                <img src="prestasi/procommit v13.jpeg" />
-            </div>
+        <div class="title-prog-1">
+            <h1>Prodistik ITS</h1>
+        </div>
+        <div class="image-prog-1">
+            <img src="prestasi/procommit v13.jpeg" />
         </div>
         <div class="para-prog-1">
             <p class="white-text"><strong>PRODISTIK ITS</strong><br>merupakan program terapan di bidang Teknologi
@@ -423,13 +410,11 @@
     </div>
     <!-- sks madrasah -->
     <div class="container-program">
-        <div class="title-image">
-            <div class="title-prog-2">
-                <h1>Madrasah SKS</h1>
-            </div>
-            <div class="image-prog-2">
-                <img src="image/SKS-img.jpeg" />
-            </div>
+        <div class="title-prog-2">
+            <h1>Madrasah SKS</h1>
+        </div>
+        <div class="image-prog-2">
+            <img src="image/SKS-img.jpeg" />
         </div>
         <div class="para-prog-2">
             <p class="white-text">
@@ -442,8 +427,34 @@
                 dan juga outbond. Selain itu, program SKS 2 tahun juga didukung oleh fasilitas pembelajaran yang
                 membuat suasana belajar menjadi sangat nyaman.
             </p>
-            <div>
-
+            <div class="sosmed">
+                <h3>Tentang SKS:</h3>
+                <ul class="wrapper">
+                    <a href="https://www.youtube.com/@man1pasuruanofficial603">
+                        <li class="icon youtube">
+                            <span class="tooltip">Youtube</span>
+                            <i class="fab fa-youtube"></i>
+                        </li>
+                    </a>
+                    <a href="https://www.tiktok.com/@man1pasuruan?_t=8pWXnWjIJ32&_r=1">
+                        <li class="icon tiktok">
+                            <span class="tooltip">Tiktok</span>
+                            <i class="fab fa-tiktok"></i>
+                        </li>
+                    </a>
+                    <a href="https://www.instagram.com/man1pasuruan?igsh=MXQ2c3c1NTl3ejVvZg==">
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                    </a>
+                    <a href="https://wa.me/6289616887840">
+                        <li class="icon whatsapp">
+                            <span class="tooltip">whatsapp</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </li>
+                    </a>
+                </ul>
             </div>
         </div>
     </div>
@@ -460,10 +471,37 @@
                     width="500" style="border:19px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div class="sosmed">
+                <h3 class="white-text">Tentang MAN 1 Pasuruan</h3>
+                <ul class="wrapper">
+                    <a href="https://www.youtube.com/@man1pasuruanofficial603">
+                        <li class="icon youtube">
+                            <span class="tooltip">Youtube</span>
+                            <i class="fab fa-youtube"></i>
+                        </li>
+                    </a>
+                    <a href="https://www.tiktok.com/@man1pasuruan?_t=8pWXnWjIJ32&_r=1">
+                        <li class="icon tiktok">
+                            <span class="tooltip">Tiktok</span>
+                            <i class="fab fa-tiktok"></i>
+                        </li>
+                    </a>
+                    <a href="https://www.instagram.com/man1pasuruan?igsh=MXQ2c3c1NTl3ejVvZg==">
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                    </a>
+                    <a href="https://wa.me/6289616887840">
+                        <li class="icon whatsapp">
+                            <span class="tooltip">whatsapp</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </li>
+                    </a>
+                </ul>	  
+            </div>
         </div>
     </footer>
-    <script src="logic.js">
-    </script>
+    <script src="JS file/logic.js"></script>
 </body>
-
 </html>

@@ -3,8 +3,10 @@
 
 <head>
     <title>Profile MANSAPAS</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style-grid.css" />
+    <link rel="stylesheet" href="CSS file/style.css" />
+    <link rel="stylesheet" href="CSS file/style-grid.css" />
+    <link rel="stylesheet" href="CSS file/style-2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
 
 <body>
@@ -12,37 +14,109 @@
         <img class="logo-navi" src="Image\Logo MAN.png" />
         <h2 class="header white-text">MANSAPAS</h2>
         <ul class="ul-navi">
-            <li class="hide"><a class="a-navi white-text" href="index.html">Home</a></li>
-            <li class="hide"><a class="a-navi white-text" href="#">Prestasi</a></li>
-            <li class="hide"><a class="a-navi white-text" href="galeri.html">Galeri</a></li>
-            <li class="hide"><a class="a-navi white-text" href="extra.html">Tentang Ekstra</a></li>
-            <li onclick=showside()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                    </svg></a></li>
+            <li><a class="hide a-navi hide white-text" href="index.html">Home</a></li>
+            <li><a class="hide a-navi hide white-text" href="#">Galeri</a></li>
+            <li><a class="hide a-navi hide white-text" href="extra.html">Tentang Ekstra</a></li>
+            <li class="show button" onclick="showside()"/><a><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></a></li>
         </ul>
     </nav>
-    <nav class="blur-fx sidebar">
-        <ul class="ul-navi-side">
-            <li onclick="hideside()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                        <path
-                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg></a></li>
-            <li><a class="a-navi-side white-text" href="#">Home</a></li>
-            <li><a class="a-navi-side white-text" href="Prestasi.html">Prestasi</a></li>
-            <li><a class="a-navi-side white-text" href="galeri.html">Galeri</a></li>
-            <li><a class="a-navi-side white-text" href="extra.html">Tentang Ekstra</a></li>
-        </ul>
-    </nav>
-    <script>
-        function showside() {
-            const sidebar = document.querySelector(".sidebar")
-            sidebar.style.right = '0'
-        }
-        function hideside() {
-            const sidebar = document.querySelector(".sidebar")
-            sidebar.style.right = '-250px'
-        }
-    </script>
+    <section class="section-pres">
+        <div class="header-content">
+            <h1 class="white-text">Galeri aktivitas MANSAPAS<h1>
+        </div>
+    </section>
+    <div class="contain-prestasi">
+        <figure class="pres-1">
+            <img src="image/pemilos.jpeg"/>
+            <figcaption>pemilos</figcaption>
+        </figure>
+        <figure class="pres-2">
+            <img src="image/wisuda.jpeg"/>
+            <figcaption>wisuda</figcaption>
+        </figure>
+        <figure class="pres-3">
+            <img src="image/adiwiyata.jpeg"/>
+            <figcaption>adiwiyata</figcaption>
+        </figure>
+        <figure class="pres-4">
+            <img src="image/prodistik.jpeg"/>
+            <figcaption>Pembelajaran PRODISTIK</figcaption>
+        </figure>
+        <figure class="pres-5">
+            <img src="image/persami.jpeg"/>
+            <figcaption>PERSAMI</figcaption>
+        </figure>
+    </div>
+    <section class="section-pres">
+        <div class="header-content">
+            <h1 class="white-text">Galeri Prestasi Tahun Pelajaran 2023-2024</h1>
+        </div>
+    </section>
+    <div class="contain-prestasi">
+        <figure class="pres-1">
+            <img src="prestasi/1 ums.jpeg"/>
+            <figcaption>Juara 1 ELTRUMS</figcaption>
+        </figure>
+        <figure class="pres-2">
+            <img src="prestasi/2 ums.jpeg"/>
+            <figcaption>Juara 2 ELTRUMS</figcaption>
+        </figure>
+        <figure class="pres-3">
+            <img src="prestasi/3 ums.jpeg"/>
+            <figcaption>Juara 3 ELTRUMS</figcaption>
+        </figure>
+        <figure class="pres-4">
+            <img src="prestasi/baronas.jpeg"/>
+            <figcaption>Juara 3 Baronas ITS</figcaption>
+        </figure>
+        <figure class="pres-5">
+            <img src="prestasi/procommit v13.jpeg"/>
+            <figcaption>7 Juara PROCOMMIT V13 ITS</figcaption>
+        </figure>
+    </div>
+    <footer></footer>
+        <div class="contain-footer">
+            <div class="img-alm">
+                <img src="image/Logo MAN.png" />
+                <p>Jl. Balai Desa Gelanggang No.3A, Glanggang, Kec. Beji, Pasuruan, Jawa Timur 67154</p>
+            </div>
+            <div class="contain-map">
+                <h1 class="white-text">MAN 1 Pasuruan</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7400.138344038372!2d112.7812138977147!3d-7.589558824141621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7db6216a50cab%3A0x3f248722b1ee5c26!2sMAN%201%20Pasuruan!5e0!3m2!1sid!2sid!4v1724950619113!5m2!1sid!2sid"
+                    width="500" style="border:19px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+	        <ul class="wrapper">
+                <a href="https://www.youtube.com/@man1pasuruanofficial603">
+                    <li class="icon youtube">
+                        <span class="tooltip">Youtube</span>
+                        <i class="fab fa-youtube"></i>
+                    </li>
+                </a>
+                <a href="https://www.tiktok.com/@man1pasuruan?_t=8pWXnWjIJ32&_r=1">
+                    <li class="icon tiktok">
+                        <span class="tooltip">Tiktok</span>
+                        <i class="fab fa-tiktok"></i>
+                    </li>
+                </a>
+                <a href="https://www.instagram.com/man1pasuruan?igsh=MXQ2c3c1NTl3ejVvZg==">
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <i class="fab fa-instagram"></i>
+                    </li>
+                </a>
+                <a href="https://wa.me/6289616887840">
+                    <li class="icon whatsapp">
+                        <span class="tooltip">whatsapp</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </li>
+                </a>
+	        </ul>	  
+
+        </div>
+    </footer>
 </body>

@@ -1,0 +1,195 @@
+.contain-prestasi{
+    display: flex;
+    gap: 20px;
+    margin:30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: white;
+    padding: 10px
+}
+.pres-1 img,
+.pres-2 img,
+.pres-3 img,
+.pres-4 img,
+.pres-5 img{
+    position:absolute;
+    height: 540px;
+    left: 0;
+}
+.pres-1,
+.pres-2,
+.pres-3,
+.pres-4,
+.pres-5{
+    position: relative;
+    height: 540px;
+    width: 400px;
+    overflow: hidden;
+}
+.pres-1 figcaption,
+.pres-2 figcaption,
+.pres-3 figcaption,
+.pres-4 figcaption,
+.pres-5 figcaption{
+    position: absolute;
+    bottom:0;
+    background-color: rgba(0,0,0,.5);
+    color:white;
+}
+.its{
+    margin: 0px 30px 0px auto;
+    width: 50px;
+}
+:root{
+    --width-image:25em;
+}
+.slider{
+    background-color: white;
+    margin: 10px 0px;
+    color: #000;
+    width: 90%;
+    height: 450px;
+    overflow: hidden;
+    padding:100px;
+}
+.slider .list .item{
+    position: relative;
+    inset: 0 0 0 0;
+}
+.slider .list .item .detail{
+    position:absolute;
+    top: 10%;
+    left:10%;
+    width:900px;
+    max-width:80%;
+    height: 400px;
+    color: black;
+    font-size:1.4em;
+    background-color: white;
+}
+.slider .list .item .detail .title{
+    background:linear-gradient(-45deg, #210cae,#4dc9e6);
+    background-clip:text;
+    color:transparent;
+    width: 7em;
+    font-size: 2em;
+    font-weight: 700;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.slider .list .item .detail .nama{
+    width:513px;
+    color:black;
+    margin-bottom: 10px;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.slider .list .item .detail .nama h4{
+    line-height: 15px;
+}
+.slider .list .item .detail p{
+    max-width: 900px;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.slider .list .thumbnail{
+    display: flex;
+    position: relative;
+    left:70%;
+    overflow: hidden;
+}
+.slider .list .thumbnail .image:nth-child(1){
+    height: 30em;
+    width: 23em;
+}
+.slider .list .thumbnail .image img{
+    width: var(--width-image);
+    height: auto;
+}
+.slider .list .arrow{
+    position:absolute;
+    display: flex;
+    top:100%;
+    left: 63%;
+    z-index:99;
+    gap: 470px;
+}
+.slider .list .arrow button{
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    background-color:#4dc9e6 ;
+    color: white;
+    font-family: monospace;
+    border-radius: 50%;
+    border:none;
+    box-shadow: 2px 1px 5px #000;
+    cursor:pointer;
+    transition: all .2s ease-in-out;
+}
+.slider .list .thumbnail .image:nth-child(2) img,
+.slider .list .thumbnail .image:nth-child(3) img,
+.slider .list .thumbnail .image:nth-child(4) img,
+.slider .list .thumbnail .image:nth-child(5) img
+{
+    opacity:0;
+}
+.slider .list .arrow button:hover{
+    background-color:white;
+    color:#4dc9e6;
+}
+@keyframes fade-in {
+    to {
+        filter: blur(0px);
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.slider.next .list .arrow,
+.slider.prev .list .arrow{
+    pointer-events: none;
+}
+.slider .list .item:nth-child(1){
+    z-index: 1;
+}
+.slider .list .item:nth-child(1) .title{
+    animation: fade-in 1s forwards 0s ease-in;
+}
+.slider .list .item:nth-child(1) .nama{
+    animation: fade-in 1s forwards .2s ease-in;
+}
+.slider .list .item:nth-child(1) p{
+    animation: fade-in 1s forwards .4s ease-in;
+}
+@keyframes hide-detail {
+    from{
+        transform: translatey(-150);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes next {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-150px);
+    }
+}
+.slider.prev .list .item:nth-last-child(1) .title,
+.slider.prev .list .item:nth-last-child(1) .nama,
+.slider.prev .list .item:nth-last-child(1) p{
+    animation: hide-detail 1s forwards 0s ease-in;
+}
+.slider.next .list .item:nth-child(1) .title,
+.slider.next .list .item:nth-child(1) .nama,
+.slider.next .list .item:nth-child(1) p{
+    animation: show-detail 1s forwards 0s ease-in;
+}
+footer .sosmed{
+    display: flex;
+    flex-direction: column;
+}

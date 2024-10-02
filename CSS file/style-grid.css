@@ -1,0 +1,40 @@
+@keyframes fade-in-scroll {
+    from{
+        transform: translate(-700px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.container-program {
+    display: grid;
+    grid-template-columns: .3fr 2.2fr 3fr;
+    grid-template-rows: repeat(4, 122.5px);
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 35px;
+    margin: 40px;
+    height: auto;
+    width: 92%;
+    overflow: hidden;
+    animation: fade-in-scroll;
+    animation-timeline: view(80% 0);
+}
+.contain-extra {
+    display: grid;
+    grid-template-columns: .3fr 1.5fr 3fr;
+    grid-template-rows: 480px;
+    grid-template-areas: 'title image para';
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin: 100px 30px 0px 30px;
+    padding: 30px;
+    border-radius: 20px;
+    height: auto;
+    
+}
+.title-image{
+    display: flex;
+}

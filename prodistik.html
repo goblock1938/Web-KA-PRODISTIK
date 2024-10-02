@@ -1,67 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile MANSAPAS</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style-grid.css" />
-</head>
-
-<body class="prodistik">
-    <!-- navbar -->
-    <nav class="blur-fx top-nav">
-        <img class="logo-navi" src="Image\Logo MAN.png" />
-        <h2 class="header white-text">MANSAPAS</h2>
-        <ul class="ul-navi">
-            <li><a class="hide a-navi hide white-text" href="index.html">Home</a></li>
-            <li><a class="hide a-navi hide white-text" href="Prestasi.html">Prestasi</a></li>
-            <li><a class="hide a-navi hide white-text" href="galeri.html">Galeri</a></li>
-            <li><a class="hide a-navi hide white-text" href="extra.html">Tentang Ekstra</a></li>
-            <li class="show" onclick=showside() /><a><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                </svg></a></li>
-            <li>
-                <img class="logo-navi"src="image/Logo ITS.png"/>
-            </li>
-        </ul>
-    </nav>
-    <nav class="blur-fx sidebar">
-        <ul class="ul-navi-side">
-            <li onclick="hideside()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile MANSAPAS</title>
+        <link rel="stylesheet" href="CSS file/style.css" />
+        <link rel="stylesheet" href="CSS file/style-2.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    </head>
+    
+    <body class="prodistik">
+        <!-- navbar -->
+        <nav class="blur-fx top-nav">
+            <img class="logo-navi" src="Image\Logo MAN.png" />
+            <h2 class="header white-text">MANSAPAS</h2>
+            <ul class="ul-navi">
+                <li><a class="hide a-navi hide white-text" href="index.html">Home</a></li>
+                <li><a class="hide a-navi hide white-text" href="Galeri.html">galeri</a></li>
+                <li><a class="hide a-navi hide white-text" href="extra.html">Tentang Ekstra</a></li>
+                <li class="show button" onclick="showside()"/><a><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                         viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                        <path
-                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                     </svg></a></li>
-            <li><a class="a-navi-side white-text" href="index.html">Home</a></li>
-            <li><a class="a-navi-side white-text" href="Prestasi.html">Prestasi</a></li>
-            <li><a class="a-navi-side white-text" href="galeri.html">Galeri</a></li>
-            <li><a class="a-navi-side white-text" href="extra.html">Tentang Ekstra</a></li>
-        </ul>
-    </nav>
-    <section>
-        <div class="section-desc white-text">
-            <h1 class="header-desc blur-fx">
-                PRODISTIK ITS
-            </h1>
-            <p class="desc-prodis blur-fx">
-                Prodistik MAN 1 Pasuruan merupakan hasil kerjasama antara MAN 1 
-                Pasuruan dan Prodistik ITS Surabaya sejak tahun 2007. Program 
-                Prodistik adalah program terapan dalam bidang Teknologi Informasi 
-                dan Komunikasi (TIK) yang bertujuan meningkatkan kemampuan siswa 
-                dalam ranah teknologi komputer. Program ini memiliki empat bidang 
-                peminatan antara lain, Pemrograman Android, Desain Grafis, 
-                Animasi, dan Aplikasi Perkantoran. Dengan fokus pada pengembangan 
-                keterampilan teknologi informasi, Prodistik mempersiapkan siswa 
-                untuk menghadapi permintaan industri yang terus berubah di era 
-                digital, memberikan landasan yang kokoh bagi perkembangan 
-                keterampilan mereka di bidang teknologi
-            </p>
-        </div>
-    </section>
-    <div class="contain-prodistik">
-        
-    </div>
-</body>
+                </ul>
+            <img class="its"src="image/Logo ITS.png"/>
+        </nav>
+        <section>
+            <div class="section-desc white-text">
+                <h1 class="header-desc">
+                    PRODISTIK ITS
+                </h1>
+                <p class="desc-prodis">
+                    Prodistik MAN 1 Pasuruan merupakan hasil kerjasama antara MAN 1 
+                    Pasuruan dan Prodistik ITS Surabaya sejak tahun 2007. Program 
+                    Prodistik adalah program terapan dalam bidang Teknologi Informasi 
+                    dan Komunikasi (TIK) yang bertujuan meningkatkan kemampuan siswa 
+                    dalam ranah teknologi komputer. Program ini memiliki empat bidang 
+                    peminatan antara lain, Pemrograman Android, Desain Grafis, 
+                    Animasi, dan Aplikasi Perkantoran. Dengan fokus pada pengembangan 
+                    keterampilan teknologi informasi, Prodistik mempersiapkan siswa 
+                    untuk menghadapi permintaan industri yang terus berubah di era 
+                    digital, memberikan landasan yang kokoh bagi perkembangan 
+                    keterampilan mereka di bidang teknologi
+                </p>
+            </div>
+        </section>
+        <section class="section-pres">
+            <div class="header-content">
+                <h1 class="white-text">Instruktur Prodistik MANSAPAS<h1>
+            </div>
+        </section>
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <div class="detail">
+                            <div class="title">Pak Alif</div>
+                            <div class="nama">
+                                <h4>Alifudin Khumaidi | Design Expert</h1><br>
+                                <h5>Umur 27| Tempat Lahir Pasuruan | Guru Fisika</h5>
+                            </div>
+                            <p>Dikenal sebagai 'Guru Fisika', Alifudin Khumaidi atau yang 
+                                akrab disapa Pak Alif diakui sebagai salah satu pendidik 
+                                terbaik dan paling cerdas di antara murid-muridnya. Beliau 
+                                memulai perjalanan karir mengajarnya di MAN 1 Pasuruan sejak 
+                                tahun 2018. Dengan gaya mengajar yang selaras dengan tren 
+                                dan kemampuan berkomunikasi yang mudah dipahami, Pak Alif 
+                                mampu menonjolkan diri di antara para guru lainnya. Saat 
+                                ini, kehadiran aktif Pak Alif sebagai guru dalam lingkungan 
+                                Prodistik MAN 1 Pasuruan tetap menjadi inspirasi bagi 
+                                siswa-siswa yang belajar di bawah bimbingannya.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="detail">
+                            <div class="title">Pak Shobah</div>
+                            <div class="nama">
+                                <h4>Muhammad Shobahul Falakh |Ms. Office Expert</h1><br>
+                                <h5>Umur 27| Tempat Lahir Pasuruan | Guru Geografi</h5>
+                            </div>
+                            <p>Dikenal sebagai 'Guru Informatika', Shobahul Fallakh 
+                                atau akrab disapa Pak Shoba dianggap sebagai 
+                                pendidik unggul dan berbakat dalam bidang 
+                                perkantoran. Karir mengajarnya dimulai di MAN 
+                                1 Pasuruan sejak tahun 2018. Gaya mengajarnya 
+                                yang sabar dan kemampuan mempraktikkan materi dengan 
+                                cara yang mudah dipahami, menjadikannya menonjol di 
+                                antara guru-guru lainnya. Saat ini, Pak Shoba tetap 
+                                menjadi sosok guru inspiratif yang aktif di 
+                                lingkungan Prodistik MAN 1 Pasuruan. Temukan \
+                                pengalaman belajar informatika yang menarik 
+                                dan up-to-date bersama Pak Shoba! </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="detail">
+                            <div class="title">Bu Siska</div>
+                            <div class="nama">
+                                <h4>Siska Amalia|Ms. Office Expert</h1><br>
+                                <h5>Guru sejarah|Guru informatika</h5>
+                            </div>
+                            <p>Dikenal sebagai "Guru Fisika" sebagaimana halnya 
+                                dengan Pak Alif, Siska Amalia atau Bu Siska 
+                                dianggap sebagai salah satu pendidik terbaik dan 
+                                berbakat di bidang Perkantoran. Beliau memulai 
+                                perjalanan karir mengajarnya di MAN 1 Pasuruan 
+                                sejak tahun 2021. Gaya mengajarnya yang sangat 
+                                kekinian dan ramah membuatnya menonjol di antara 
+                                guru-guru lainnya. Saat ini, Bu Siska masih 
+                                aktif sebagai pengajar di Prodistik MAN 1 
+                                Pasuruan. Temukan pengalaman belajar yang unik 
+                                dan bermakna bersama Bu Siska!  </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="detail">
+                            <div class="title">Pak Sutris</div>
+                            <div class="nama">
+                                <h4>Ahmad Sutrisno | Video Editing Expert</h1><br>
+                                <h5>Umur 29| Tempat Lahir Pasuruan | Guru Informatika</h5>
+                            </div>
+                            <p>Dikenal sebagai 'Guru Informatika', Ahmad Sutrisno 
+                                atau yang akrab disapa Pak Sutris diakui sebagai 
+                                salah satu pendidik terbaik dan berbakat dalam 
+                                bidang sinematik. Beliau memulai perjalanan karir 
+                                mengajarnya di MAN 1 Pasuruan sejak tahun 2018. 
+                                Gaya mengajarnya yang keren dan penuh karisma, 
+                                ditambah dengan ketegasannya, menjadikannya 
+                                menonjol di antara guru-guru lainnya. Saat ini, 
+                                Pak Sutris tetap aktif sebagai guru yang inspiratif 
+                                dalam lingkungan Prodistik MAN 1 Pasuruan. </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="detail">
+                            <div class="title">Bu Nina</div>
+                            <div class="nama">
+                                <h4>Nina Khoidaroh|Animation Expert</h1><br>
+                                <h5>Umur 28 | Tempat lahir pasuruan | Guru informatika</h5>
+                            </div>
+                            <p>Dikenal sebagai 'Guru Informatika', Nina Khoidaroh 
+                                atau akrab disapa Bu Nina dianggap sebagai 
+                                pendidik unggul dan berbakat dalam bidang 
+                                Animasi. Karir mengajarnya dimulai di MAN 
+                                1 Pasuruan sejak tahun 2018. Gaya mengajarnya 
+                                yang sabar dan kemampuan mempraktikkan materi dengan 
+                                cara yang mudah dipahami, menjadikannya menonjol di 
+                                antara guru-guru lainnya. Saat ini, Pak Shoba tetap 
+                                menjadi sosok guru inspiratif yang aktif di 
+                                lingkungan Prodistik MAN 1 Pasuruan. Temukan \
+                                pengalaman belajar informatika yang menarik 
+                                dan up-to-date bersama Bu Nina! </p>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="thumbnail">
+                        <div class="image">
+                            <img src="image/pak alif.png"/>
+                        </div>
+                        <div class="image">
+                            <img src="image/pak shobah.png"/>
+                        </div>
+                        <div class="image">
+                            <img src="image/bu siska.png"/>
+                        </div>
+                        <div class="image">
+                            <img src="image/pak sutris.png"/>
+                        </div>
+                        <div class="image">
+                            <img src="image/bu nina.png"/>
+                        </div>
+                    </div>
+                    <!-- arrow -->
+                    <div class="arrow">
+                        <button id="prev">&laquo;</button>
+                        <button id="next">&raquo;</button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="contain-footer">
+                    <div class="img-alm">
+                        <img src="image/Logo MAN.png" />
+                        <p>Jl. Balai Desa Gelanggang No.3A, Glanggang, Kec. Beji, Pasuruan, Jawa Timur 67154</p>
+                    </div>
+                    <div class="contain-map">
+                        <h1 class="white-text">MAN 1 Pasuruan</h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7400.138344038372!2d112.7812138977147!3d-7.589558824141621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7db6216a50cab%3A0x3f248722b1ee5c26!2sMAN%201%20Pasuruan!5e0!3m2!1sid!2sid!4v1724950619113!5m2!1sid!2sid"
+                            width="500" style="border:19px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="sosmed">
+                        <ul class="wrapper"><h3>Temukan MAN 1 Pasuruan di:</h3>
+                            <a href="https://www.youtube.com/@man1pasuruanofficial603">
+                                <li class="icon youtube">
+                                    <span class="tooltip">Youtube</span>
+                                    <i class="fab fa-youtube"></i>
+                                </li>
+                            </a>
+                            <a href="https://www.tiktok.com/@man1pasuruan?_t=8pWXnWjIJ32&_r=1">
+                                <li class="icon tiktok">
+                                    <span class="tooltip">Tiktok</span>
+                                    <i class="fab fa-tiktok"></i>
+                                </li>
+                            </a>
+                            <a href="https://www.instagram.com/man1pasuruan?igsh=MXQ2c3c1NTl3ejVvZg==">
+                                <li class="icon instagram">
+                                    <span class="tooltip">Instagram</span>
+                                    <i class="fab fa-instagram"></i>
+                                </li>
+                            </a>
+                            <a href="https://wa.me/6289616887840">
+                                <li class="icon whatsapp">
+                                    <span class="tooltip">whatsapp</span>
+                                    <i class="fab fa-whatsapp"></i>
+                                </li>
+                            </a>
+                        </ul>
+                        <ul class="wrapper"><h3>Temukan PRODISTIK MANSAPAS di:</h3>
+                            <a href="https://www.youtube.com/@man1pasuruanofficial603">
+                                <li class="icon youtube">
+                                    <span class="tooltip">Youtube</span>
+                                    <i class="fab fa-youtube"></i>
+                                </li>
+                            </a>
+                            <a href="https://www.tiktok.com/@man1pasuruan?_t=8pWXnWjIJ32&_r=1">
+                                <li class="icon tiktok">
+                                    <span class="tooltip">Tiktok</span>
+                                    <i class="fab fa-tiktok"></i>
+                                </li>
+                            </a>
+                            <a href="https://www.instagram.com/man1pasuruan?igsh=MXQ2c3c1NTl3ejVvZg==">
+                                <li class="icon instagram">
+                                    <span class="tooltip">Instagram</span>
+                                    <i class="fab fa-instagram"></i>
+                                </li>
+                            </a>
+                            <a href="https://wa.me/6289616887840">
+                                <li class="icon whatsapp">
+                                    <span class="tooltip">whatsapp</span>
+                                    <i class="fab fa-whatsapp"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        <script src="JS file/slider.js"></script>
+    </body>
+</html>

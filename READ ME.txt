@@ -1,0 +1,1 @@
+Project ini tidak ada Responsive media nya dan hanya bisa di Akses di Media dengan skala 1920*1080 dan scale layar 100% (150% = default)
